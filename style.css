@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost:wght@200;300&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+ html{
+    scroll-behavior: smooth;
+  }
+
+
+#chihiro{
+    padding: 10px;
+    display: inline-flex;
+}
+#ponyo{
+    padding: 10px;
+    display: block;
+}
+#castelo{
+    padding: 10px;
+    display: block;
+}
+
+@keyframes animacao-spirit {
+    from{
+        height: 100vh;
+        background-image: url(img/face.png);
+        background-repeat:no-repeat;
+        background-size: 150px;
+        background-position: bottom;
+        background-position-x: right;
+    }
+
+    to{ 
+        
+        height: 50vh;
+        background-image: url(img/face.png);
+        background-repeat:no-repeat;
+        background-size: 70px;
+        background-position: bottom;
+        background-position-x: left; 
+    }
+}
+body{
+    margin: 0;
+    padding: 10px;
+    /*background:#4ba8979f;*/
+    background:black;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: white;
+    /*background:linear-gradient(68.15deg, #C4ABFF, #FFFE9E);*/
+}
+
+
+#caixa-spirit-img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+   
+}
+
+#caixa-spirit{
+    display: block;
+    animation: animacao-spirit linear 25s 2s infinite ;
+}
+
+#caixa-spirit h2{
+    font-family: "Lora";
+    margin-left: 60px;
+    font-size: 41px;
+    padding: 117px 0px 0px 85px;
+    text-shadow: black 0.1em 0.1em 0.6em
+
+}
+
+#caixa-spirit p{
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(250, 235, 215, 0.885);
+    margin-left: 40px;
+    color: black;
+    height: max-content;
+    text-align: justify;
+    max-width: 680px;
+    min-width: 360px;
+    padding: 10px 13px 10px 16px;
+    border-radius: 20px;
+}
+
+@keyframes animacao-ponyo { 
+    from{
+        background-image: url(img/809783.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+to{ 
+    background-image: url(img/420274.jpg);
+    background-size: cover;
+}
+}
+
+#caixa-ponyo-img{
+    margin-top: 40px;
+    animation: animacao-ponyo ease-in 25s 7s infinite alternate;
+}
+
+#caixa-ponyo{
+    height: max-content;
+    max-width: 600px;
+    display: block;
+}
+
+#caixa-ponyo h3{
+    font-family: "Lora";
+    margin: 14px 0px 10px 65px;
+    padding: 189px 0px 0px 5px;
+    font-size: 38px;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+#caixa-ponyo p{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px 20px 7px 25px;
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px 0px 0px 40px;    
+    background-color: rgba(250, 235, 215, 0.897);
+    max-width: 560px;
+    border-radius: 40px;
+}
+
+
+#caixa-ponyo-img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/809783.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes animacao-castelo {
+    from{
+        height: 100vh;
+        background-image: url(img/pipa.png);
+        background-size: 100px;
+        background-position: center bottom;
+        background-repeat: no-repeat;  
+    }
+    
+    to{   
+        height: 100vh;
+        background-image: url(img/pipa.png);
+        background-position: top right;
+        background-size: 90px;
+        background-repeat: no-repeat;  
+    }
+}
+
+
+#caixa-castelo{
+    margin-top: 50px;
+    animation: animacao-castelo linear 20s 3s infinite normal;
+}
+
+#caixa-castelo-img{
+    width: 100%;
+    height: 100vh;
+    position: static;
+    background-image: url(img/castelo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: auto;
+}
+
+#caixa-castelo h4{
+    margin: 20px 20px 15px 27px;
+    font-family: "Lora";
+    font-size: 45px;
+    padding: 138px 0px 25px 66px;
+    text-shadow: rgba(16, 210, 204, 0.992) 0.1em 0.1em 0.6em
+    
+}
+#caixa-castelo p{
+    margin: -5px 25px 5px 27px;
+    border-radius: 20px;
+    color: black;
+    text-align: justify;
+    height: max-content;
+    max-width: 580px;
+    max-height: max-content;
+    padding: 15px 13px 10px 20px;
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(250, 235, 215, 0.923);
+}
+
+
+.nav-menu{
+    font-family: "Lora";
+    background:rgba(0, 0, 0, 0.999);
+    display:inline-flex ;
+    color: white;
+    margin: auto;
+    margin-top: -20px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    position: fixed;
+    padding: 0px 37px;
+    align-content: center;
+    width: 98.8%;
+}
+
+.nav-menu-items{
+    margin: 38px 78px 38px 28px;
+    padding: 0px 10px 0px 100px;
+    display:flex ;
+    justify-content: space-between;
+    gap: 41px;
+    position:  relative;
+    font-size: 18px; 
+    width: 60%;
+}
+
+.nav-menu h1{
+    padding: 38px 73px;
+    margin: -9px;   
+    font-size: 36px; 
+    display: inline-flex;
+}
+
+#rodape{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 0px 5px 0px;
+    font-size: 20px;
+    background:#68e4cd9f;
+    /*background:#3686779a;*/
+    
+    text-align: center;
+    font-family: "Lora";
+}
